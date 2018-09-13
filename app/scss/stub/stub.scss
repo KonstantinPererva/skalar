@@ -32,6 +32,10 @@ body {
 
     &__hold {
       height: 100vh;
+
+      @media (max-width: 767px) {
+        height: auto;
+      }
     }
   }
 
@@ -106,8 +110,14 @@ body {
     display: block;
     overflow: hidden;
 
-    @media (max-width: 767px) {
+    @media (max-width: 414px) {
       //margin: -180px 0 0;
+      height: 230px;
+    }
+
+    @media (max-width: 360px) {
+      //margin: -180px 0 0;
+      height: 204px;
     }
   }
 
@@ -123,11 +133,17 @@ body {
 
     @media (max-width: 767px) {
       flex-direction: column;
-      height: 200px;
-      padding: 0 45px 0 60px;
+      height: auto;
+      padding: 15px 15px 0 30px;
       //transform: translateY(400px);
       //animation: slideBoxMobile .25s cubic-bezier(.6,.23,0,1.02) 4.5s;
       //animation-fill-mode: forwards;
+    }
+
+    @media (max-width: 360px) {
+      flex-direction: column;
+      height: auto;
+      padding: 0 15px;
     }
   }
 
@@ -223,6 +239,11 @@ body {
       overflow: hidden;
 
 
+      @media (max-width: 991px) {
+        margin: 0 64px;
+      }
+
+
       @media (max-width: 767px) {
         width: 100%;
         margin: 0;
@@ -316,7 +337,7 @@ body {
 
   @media (max-width: 767px) {
     position: static;
-    transform: translateY(120px);
+    //transform: translateY(120px);
     //transform: translateY(0px);
   }
 }
@@ -367,10 +388,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 15px 0 0;
+  padding: 26px 0 0;
 
   @media (max-width: 767px) {
-    width: 95%;
+    width: 142px;
     padding: 30px 0;
   }
 
