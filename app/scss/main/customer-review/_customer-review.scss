@@ -1,0 +1,27 @@
+.customer-review {
+
+  &__inner-wrap {
+    display: flex;
+    padding: 60px 0 60px 136px;
+  }
+
+  &__left {
+    position: relative;
+    width: 270px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 72px;
+      height: 48px;
+      background: url(../img/review.png) no-repeat;
+      position: absolute;
+      top: -91px;
+      right: 7px;
+    }
+  }
+
+  &__right {
+    width: 915px;
+  }
+}

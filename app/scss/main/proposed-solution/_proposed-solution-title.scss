@@ -1,0 +1,23 @@
+.proposed-solution-title {
+  position: absolute;
+  top: 76%;
+  left: 0;
+  width: 265px;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  border-bottom: 1px solid $color-link-projects;
+  text-align: right;
+  padding: 9px 0;
+
+  &__text {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+
+    &_blue {
+      color: $color-link-projects;
+    }
+  }
+
+
+}

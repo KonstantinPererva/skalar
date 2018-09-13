@@ -1,0 +1,32 @@
+.project-color-list {
+  display: flex;
+  padding: 70px 0 88px;
+
+  &__item {
+    width: 73px;
+    height: 73px;
+    box-shadow: 0 0 0 10px #fff, 0 10px 49px rgba(0,63,95,.32);
+    border-radius: 50%;
+    text-align: center;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  &__item + &__item {
+    margin: 0 0 0 130px;
+  }
+
+  &__title {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,28 @@
+.btn-back-projects {
+  display: inline-block;
+  color: $color-btn-back-projects;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0 44px 42%;
+  cursor: pointer;
+  padding: 8px;
+
+  &:hover {
+    color: $color-main-link-hover;
+  }
+
+  &__title-text {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 15px 0 0;
+  }
+
+  &__icn {
+    display: inline-block;
+    width: 32px;
+    height: 25px;
+    background: url(../img/arrow-back.png) no-repeat center;
+    vertical-align: bottom;
+  }
+}

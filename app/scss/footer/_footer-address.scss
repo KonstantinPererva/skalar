@@ -1,0 +1,22 @@
+/*footer address*/
+.footer-address {
+  flex-shrink: 0;
+  width: 462px;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  padding: 40px 0 0 37px;
+  z-index: 20;
+  margin: 0 20px;
+
+  &__block {
+    margin: 0 0 45px 0;
+  }
+  
+  &__local {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 16px 0;
+  }
+}

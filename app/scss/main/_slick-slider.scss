@@ -1,0 +1,45 @@
+/*slider-list*/
+.slider-list{
+
+  & .slick-dots {
+    bottom: -57px;
+    z-index: 1;
+  }
+
+  & .slick-dots li {
+    background: #0e4468;
+    width: 6px;
+    height: 6px;
+    opacity: .5;
+    margin: 0 12px;
+    transition: opacity .3s;
+  }
+
+  & .slick-dots li button:before {
+    content: '';
+  }
+}
+
+.slideshow{
+
+  & .slick-dots {
+    bottom: 153px;
+  }
+
+  & .slick-dots li {
+    background: #fff;
+    width: 6px;
+    height: 6px;
+    opacity: .5;
+    margin: 0 12px;
+    transition: opacity .3s;
+  }
+
+  & .slick-dots li button:before {
+    content: '';
+  }
+}
+
+.slick-dots li.slick-active {
+  opacity: 1;
+}

@@ -1,0 +1,43 @@
+/*footer*/
+.footer {
+  position: relative;
+
+  &__visible {
+    position: relative;
+    background: $color-bg-footer-panel;
+    padding: 4px 0;
+    z-index: 2;
+  }
+
+  &__hidden {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 468px;
+    transform: translateY(0%);
+    transition: .8s cubic-bezier(0.43, 0.71, 0.32, 0.95);
+    z-index: 1;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+
+    & .wrap-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    &_active{
+      transform: translateY(-100%);
+    }
+  }
+
+  &__wrapper {
+    transform: translateY(0);
+    transition: transform 0.8s cubic-bezier(0.43, 0.71, 0.32, 0.95);
+    padding: 20px 0 0 0;
+
+    &_hidden {
+      transform: translateY(100%);
+    }
+  }
+
+}
+

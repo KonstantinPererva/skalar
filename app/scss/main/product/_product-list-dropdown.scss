@@ -1,0 +1,23 @@
+/*product list dropdown*/
+.product-list-dropdown {
+  background: rgba(255, 255, 255, 0.16);
+  padding: 1px 0 0 0;
+  overflow: hidden;
+  opacity: 1;
+  max-height: 1000px;
+  transition: max-height 0.2s ease, opacity .2s;
+
+  &__item + &__item {
+    margin: 12px 0 0 0;
+  }
+
+  &__item {
+    transition: .15s;
+    display: table;
+    width: 100%;
+
+    &:first-child {
+      margin: 10px 0 0 0;
+    }
+  }
+}

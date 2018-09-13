@@ -1,0 +1,17 @@
+.project-result {
+  background: $color-bg-main;
+  background: radial-gradient(ellipse closest-corner at center center, rgba(8,141,193,1), rgba(9,125,174,1));
+
+  &__descr {
+    width: 60%;
+    padding: 70px 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  &__text {
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

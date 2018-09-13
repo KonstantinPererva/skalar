@@ -1,0 +1,41 @@
+/*slide move*/
+.slide-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 800px;
+  height: 300px;
+  color: #fff;
+  text-align: center;
+  z-index: 1500;
+  opacity: 0;
+  transition: opacity .4s;
+
+  &_active-opacity {
+    opacity: 1;
+    transition: opacity .6s;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 0 2px 0 rgba(0,0,0,1);
+    letter-spacing: 0.02em;
+    margin: 0 0 30px;
+  }
+
+  &__descr {
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 2px 0 rgba(0,0,0,1);
+    letter-spacing: 0.05em;
+    margin: 0 0 40px;
+  }
+
+  & .btn {
+    margin: 0 auto;
+  }
+}

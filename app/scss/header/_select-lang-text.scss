@@ -1,0 +1,24 @@
+.select-lang-text {
+  display: block;
+  width: 78px;
+  height: 36px;
+  background: #fff;
+  font-size: 0.875rem;
+  line-height: 36px;
+  padding: 0 12px;
+
+  &:hover {
+    background: #e6ecf0;
+  }
+
+  &_active {
+    color: #fff;
+    background: $color-btn-blue;
+    cursor: inherit;
+
+    &:hover {
+      color: #fff;
+      background: $color-btn-blue;
+    }
+  }
+}

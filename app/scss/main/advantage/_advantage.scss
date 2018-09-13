@@ -1,0 +1,14 @@
+/*advantage*/
+.advantage {
+  height: 370px;
+  background: url(../img/climber.png) no-repeat 40% bottom,
+  						url(../img/mountains.jpg) no-repeat;
+  background-size: auto,cover;
+  margin: 80px 0;
+
+  &__gradient{
+    height: inherit;
+    background: linear-gradient(to bottom, transparent, #f7f8f8),
+                linear-gradient(to bottom, #f7f8f8, transparent);
+  }
+}

@@ -1,0 +1,16 @@
+.project-team {
+  padding: 0 0 40px;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__col {
+    margin: 0 4px;
+
+    &_executor {
+      min-width: 340px;
+    }
+  }
+}

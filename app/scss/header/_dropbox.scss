@@ -1,0 +1,21 @@
+/*Dropbox*/
+.dropbox {
+  position: relative;
+  height: inherit;
+  background: url("../img/manager.png") no-repeat right bottom $color-bg-dropbox;
+  z-index: 1;
+  padding: 12px 0 48px;
+
+  & .wrap-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  &__wr {
+    position: absolute;
+    top: 0;
+    height: inherit;
+    z-index: 1;
+  }
+}

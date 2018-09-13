@@ -1,0 +1,35 @@
+.screenshot-list {
+  width: 366px;
+  list-style: none;
+  padding: 128px 0 0;
+
+  &__item {
+  }
+
+  &__item + &__item {
+    border-top: 1px solid #bbcad4;
+  }
+
+  &__link {
+    display: block;
+    height: 66px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-title-project;
+    cursor: pointer;
+    padding: 0 0 0 42px;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 0;
+      margin: 0 -0.25em 0 0;
+      vertical-align: middle;
+    }
+
+    &_active {
+      font-weight: 900;
+    }
+  }
+}

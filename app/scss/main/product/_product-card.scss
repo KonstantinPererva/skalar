@@ -1,0 +1,112 @@
+/*product card*/
+.product-card {
+  display: flex;
+  max-height: 126px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  cursor: pointer;
+
+  &_mod {
+    align-items: center;
+    max-height: 57px;
+    background: rgba(255, 255, 255, 0.09);
+  }
+
+  &_active {
+    background: rgba(255, 255, 255, 0.3);
+
+    & .product-card__substrate{
+      background: url(../img/substrate-white-sel-prod.png) no-repeat;
+      background-size: cover;
+    }
+
+    & .product-card__substrate_mod {
+      background: rgba(255, 255, 255, 0.72);
+    }
+  }
+
+  &:hover {
+
+    & .product-card__substrate {
+      outline: 1px solid #fff;
+      outline-offset: 3px;
+
+      &_mod {
+        outline-offset: -1px;
+      }
+    }
+  }
+
+  &_active {
+
+    &:hover {
+      & .product-card__substrate,& .product-card__substrate_mod {
+        outline: none;
+      }
+    }
+  }
+
+  &__wr-img {
+    position: relative;
+    min-width: 126px;
+    height: 126px;
+    background: rgba(255,255,255,.11);
+    padding: 7px;
+
+    &_mod {
+      height: 57px;
+      min-width: 57px;
+      padding: 0;
+      background: rgba(255, 255, 255, 0.14);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &__substrate {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    padding: 10px 20px;
+
+    @media screen and(max-width: 1900px) {
+      padding: 8px 8px 8px 12px;
+    }
+  }
+
+  &__text-title {
+    font-size: 1.125rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+
+  &__text-descr {
+
+    &_mod {
+      display: table-row;
+      height: 57px;
+      font-size: 1.125rem;
+      font-weight: 500;
+      padding: 0 20px;
+      overflow: hidden;
+      vertical-align: middle;
+
+      & span {
+        height: 57px;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}

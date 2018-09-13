@@ -1,0 +1,10 @@
+/*social network*/
+.soc-net {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: block;
+    margin: 0 0 0 34px;
+  }
+}

@@ -1,0 +1,11 @@
+/*Address link*/
+.address-link {
+  display: inline-block;
+  color: $color-link-footer;
+  border-bottom: 1px solid $color-link-footer;
+  cursor: pointer;
+  
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
+}

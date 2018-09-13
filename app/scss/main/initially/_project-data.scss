@@ -1,0 +1,44 @@
+.project-data {
+  width: 510px;
+  padding: 0 0 0 134px;
+
+  &__logo {
+    margin: 0 0 40px 0;
+  }
+
+  &__logo-img {
+    vertical-align: bottom;
+  }
+
+  &__title {
+    line-height: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color-title-project;
+    font-weight: 900;
+    margin: 0 10px 0 0;
+  }
+
+  &__text {
+    line-height: 30px;
+  }
+
+  &__link {
+    font-size: 15px;
+    text-decoration: none;
+    color: $color-link-projects;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__time {
+    width: 85px;
+    text-align: center;
+    color: $color-text-pale;
+    border: 1px solid currentColor;
+    padding: 3px 0;
+    margin: 10px 0 0;
+  }
+}

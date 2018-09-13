@@ -1,0 +1,19 @@
+.initially-descr {
+
+  &__title {
+    border-bottom: 1px solid $color-title-project;
+    padding: 16px 0;
+  }
+
+  &__title-text {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    color: $color-title-project;
+  }
+
+  &__text {
+    text-indent: 36px;
+    line-height: 24px;
+  }
+}

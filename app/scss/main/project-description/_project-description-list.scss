@@ -1,0 +1,20 @@
+.project-description-list {
+  list-style-type: none;
+  padding: 0;
+  counter-reset: decimal;
+
+  &__item {
+    position: relative;
+
+    &:before {
+      content: counter(decimal)".";
+      counter-increment: decimal;
+      font-weight: 900;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

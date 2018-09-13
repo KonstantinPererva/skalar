@@ -1,0 +1,36 @@
+/* tabs */
+
+.tabs {
+
+  &_technology {
+    background: rgb(0,142,196);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,142,196,1) 0%, rgba(0,66,106,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,142,196,1) 0%,rgba(0,66,106,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(0,142,196,1) 0%,rgba(0,66,106,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ec4', endColorstr='#00426a',GradientType=1 );
+  }
+
+  &_expertise {
+    background: rgb(14,67,102); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(14,67,102,1) 0%, rgba(10,43,59,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(14,67,102,1) 0%,rgba(10,43,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(14,67,102,1) 0%,rgba(10,43,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e4366', endColorstr='#0a2b3b',GradientType=1 );
+  }
+
+  &_methodology {
+    background: rgb(0,39,56);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,39,56,1) 0%, rgba(0,18,28,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,39,56,1) 0%,rgba(0,18,28,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(0,39,56,1) 0%,rgba(0,18,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002738', endColorstr='#00121c',GradientType=1 );
+  }
+
+  &__top {
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+    background: rgba(0,0,0, .1);
+  }
+
+}
+
+

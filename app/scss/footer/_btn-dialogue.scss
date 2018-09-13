@@ -1,0 +1,58 @@
+/*Button "dialogue"*/
+.btn-dialogue {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  
+  &__text-wr {
+    position: relative;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    min-width: 100px;
+  }
+
+  &__text-visible {
+    position: relative;
+    display: block;
+    z-index: 1;
+  }
+
+  &__text-shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    opacity: 0;
+    color: transparent;
+    animation: 1s blink;
+    animation-iteration-count: infinite;
+    text-shadow: 4px 4px 10px rgba(8, 141, 193, .8),
+    4px -4px 10px rgba(8, 141, 193, .8),
+    -4px -4px 10px rgba(8, 141, 193, .8),
+    -4px 4px 10px rgba(8, 141, 193, .8);
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: -24px;
+      display: block;
+      box-shadow: 0 0 30px 10px rgba(8, 141, 193, 0.8);
+      z-index: 0;
+    }
+  }
+
+  &__shadow {
+    display: block;
+    width: 12px;
+    height: 10px;
+  }
+
+  &__icn {
+    position: relative;
+    z-index: 1;
+  }
+}

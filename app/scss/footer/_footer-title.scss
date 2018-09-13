@@ -1,0 +1,16 @@
+/*footer title*/
+.footer-title {
+  position: relative;
+
+  &__icn {
+    position: absolute;
+    top: 0;
+    right: 103%;
+  }
+  
+  &__text {
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 500;
+  }
+}

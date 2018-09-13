@@ -1,0 +1,128 @@
+/*button*/
+.btn {
+  height: 48px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+
+  &_short {
+    width: 186px;
+  }
+
+  &_middle {
+    width: 281px;
+  }
+
+  &_long {
+    width: 384px;
+  }
+
+  &_white {
+
+    & .btn__link {
+      border-color: $color-btn-white;
+
+      &:hover {
+        background: $color-btn-white;
+      }
+    }
+
+    & .btn__text_visible {
+      color: $color-btn-white;
+    }
+
+    & .btn__text_hidden {
+      color: $color-main-text;
+    }
+  }
+
+  &_blue {
+
+    & .btn__link {
+      border-color: $color-btn-blue;
+
+      &:hover {
+        background: $color-btn-blue;
+      }
+    }
+
+    & .btn__text_visible {
+      color: $color-btn-blue;
+    }
+
+    & .btn__text_hidden {
+      color: $color-btn-white;
+    }
+  }
+
+  &_transparent {
+
+    & .btn__link {
+      border-color: $color-btn-white;
+      background: none;
+
+      &:hover {
+        border-color: $color-btn-blue;
+      }
+    }
+
+    & .btn__text_visible {
+      color: $color-btn-white;
+    }
+
+    & .btn__text_hidden {
+      color: $color-btn-white;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    overflow: hidden;
+    transition: background .15s;
+
+    &:hover {
+
+      & .btn__text_visible {
+        transform: translateY(-35%);
+        opacity: 0;
+      }
+
+      & .btn__text_hidden {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    &_visible {
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform .15s, opacity .15s;
+    }
+
+    &_hidden {
+      transform: translateY(35%);
+      opacity: 0;
+      transition: transform .15s, opacity .15s;
+    }
+  }
+}

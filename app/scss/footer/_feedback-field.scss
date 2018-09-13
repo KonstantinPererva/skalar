@@ -1,0 +1,8 @@
+/*Feedback field*/
+.feedback-field {
+
+  &_left, &_right {
+    position: relative;
+    width: 46%;
+  }
+}

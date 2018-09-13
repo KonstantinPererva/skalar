@@ -1,0 +1,45 @@
+.project-charact-item {
+  width: 400px;
+
+  &__title {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: $color-title-project;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-title-project;
+
+    &:before {
+      content: '•';
+    }
+  }
+
+  &__icn {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 30px;
+
+    &_desktop {
+      background: url(../img/desktop.png) no-repeat center;
+    }
+
+    &_target {
+      background: url(../img/target.png) no-repeat center;
+    }
+
+    &_group {
+      background: url(../img/group.png) no-repeat center;
+    }
+  }
+}

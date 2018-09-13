@@ -1,0 +1,49 @@
+.proposed-solution-list {
+  list-style: none;
+  padding: 0 0 20px 0;
+
+  &__item {
+    position: relative;
+    padding: 0 40px 25px 40px;
+  }
+
+  &__mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    background: rgba(255,255,255,.2);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      width: 7px;
+      height: 7px;
+      background: rgba(255,255,255,1);
+    }
+  }
+  
+  &__text {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  &__link {
+    color: $color-link-proposed;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.proposed-solution-img {
+
+
+  &__icn {
+    margin: 0 40px 20px 0;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__1C {
+    width: 85px;
+  }
+
+  &__PHP {
+    width: 100px;
+  }
+
+  &__JS {
+    width: 57px;
+  }
+
+  &__CSS {
+    width: 57px;
+  }
+
+  &__HTML {
+    width: 57px;
+  }
+
+  &__bitrix {
+    width: 88px;
+  }
+}

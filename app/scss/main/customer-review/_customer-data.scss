@@ -1,0 +1,24 @@
+.customer-data {
+
+  &__name {
+    display: block;
+    font-size: 16px;
+    font-weight: 900;
+    color: $color-title-project;
+    margin: 0 0 5px;
+  }
+
+  &__post {
+    display: block;
+    font-size: 14px;
+    color: $color-title-project;
+    margin: 0 0 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+    text-indent: 36px;
+    line-height: 24px;
+    margin: 0 0 20px;
+  }
+}

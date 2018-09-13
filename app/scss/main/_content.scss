@@ -1,0 +1,20 @@
+/* content */
+
+.tabs__bottom {
+  padding-bottom: 505px;
+  position: relative;
+}
+
+.switches-content {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  &.active {
+    opacity: 1;
+    z-index: 1;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+}

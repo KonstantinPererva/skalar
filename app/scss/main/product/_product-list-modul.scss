@@ -1,0 +1,41 @@
+/*product list modul*/
+.product-list-modul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 1.2857rem;
+  color: #fff;
+  padding: 0 18px;
+  cursor: pointer;
+
+  &__text {
+    display: flex;
+  }
+
+  &__text-title {
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 15px 0 0;
+  }
+
+  &__text-num {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.14);
+  }
+
+  &__icn {
+    display: block;
+    transform: rotate(0);
+    transition: transform .2s;
+
+    &_close {
+      transform: rotate(-180deg);
+    }
+  }
+}

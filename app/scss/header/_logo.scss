@@ -1,0 +1,45 @@
+/*logo*/
+.logo {
+  margin: 0;
+
+  &__link {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: $color-logo;
+    overflow: hidden;
+    padding: 9px 0;
+  }
+
+  &__icn {
+    position: relative;
+    display: inline-block;
+    padding-right: 12px;
+    margin-right: 12px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      width: 1px;
+      height: 60px;
+      border-radius: 0 / 30px;
+      background-color: #092b39;
+      background: linear-gradient(to bottom, #e9eced 0%,#0a2b3a 50%,#e9eced 100%);
+    }
+  }
+
+  &__text {
+    display: block;
+    font-size: 	0.75rem;
+    margin: 0 0 3px;
+  }
+  
+  &__text-wrap {
+    float: right;
+  }
+}

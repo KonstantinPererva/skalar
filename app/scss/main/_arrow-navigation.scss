@@ -1,0 +1,35 @@
+/* arrow tabs navigation */
+
+.arrow-navigation {
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  
+  &__img {
+    cursor: pointer;
+  }
+
+  &_prev {
+    left: -53px;
+  }
+
+  &_next {
+    right: -53px;
+  }
+
+  &_prev-work {
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &_next-work {
+    top: auto;
+    bottom: 40px;
+    right: 10%;
+    transform: translateX(-50%);
+  }
+
+
+}

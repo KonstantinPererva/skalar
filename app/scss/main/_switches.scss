@@ -1,0 +1,45 @@
+/* switches */
+
+.switches-list {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__item {
+
+    &:hover .switches-list-head {
+      opacity: 1;
+    }
+
+    &.active .switches-list-head {
+      opacity: 1;
+    }
+  }
+}
+
+.switches-list-head {
+  display: inline-block;
+  padding: 29px 45px;
+  font-size: 	1rem;
+  letter-spacing: 0.3px;
+  color: $white;
+  font-weight: 400;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sliding-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background: $white;
+}
+
+.sliding-line2 {
+  border: 1px solid $white;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+}

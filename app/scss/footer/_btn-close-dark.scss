@@ -1,0 +1,23 @@
+/*Button close dark*/
+.btn-close-dark {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 200px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 12px;
+  cursor: pointer;
+  display: none;
+
+  &_active {
+    display: block;
+  }
+
+  &__text {
+    margin: 0 20px 0 0;
+  }
+}

@@ -1,0 +1,21 @@
+/*Button "hide section"*/
+.btn-hide-section {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-size: 0.857rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  padding: 10px;
+
+  &__icn {
+    margin: 0 0 0 3px;
+  }
+  
+  &__text {
+    color: #fff;
+  }
+}

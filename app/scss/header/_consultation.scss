@@ -1,0 +1,40 @@
+/*Consultation*/
+.consultation  {
+  position: relative;
+  width: 490px;
+  padding: 38px 0 26px;
+
+  &__title {
+    width: 280px;
+    font-size: 3.4286rem;
+    line-height: 60px;
+    font-weight: 700;
+    color: $color-main-link;
+  }
+  
+  &__link {
+    position: absolute;
+    top: 200px;
+    left: 78px;
+    display: block;
+    width: 230px;
+    font-size: 1.2857rem;
+    color: $color-main-link;
+    
+    &:hover {
+      color: $color-main-link-hover;
+      text-decoration: none;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: -40px;
+      left: -64px;
+      display: block;
+      width: 48px;
+      height: 66px;
+      background: url("../img/curved-arrow.png") no-repeat;
+    }
+  }
+}

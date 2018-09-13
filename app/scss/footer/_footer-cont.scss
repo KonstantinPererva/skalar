@@ -1,0 +1,22 @@
+/*footer content*/
+.footer-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    min-width: 220px;
+    color: #fff;
+  }
+
+  &__copy {
+    font-size: 0.75rem;
+    color: #818c90;
+  }
+
+  &__logo {
+    margin: 0 12px 0 0;
+  }
+}

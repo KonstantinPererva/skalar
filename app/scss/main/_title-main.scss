@@ -1,0 +1,11 @@
+/*title main*/
+.title-main {
+  font-weight: 900;
+  font-size: 2.25rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  &_small {
+    font-size: 1.125rem;
+  }
+}

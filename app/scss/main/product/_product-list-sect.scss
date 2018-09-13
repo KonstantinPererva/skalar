@@ -1,0 +1,42 @@
+/*product list sect*/
+.product-list-sect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0 18px;
+  cursor: pointer;
+
+  &__text {
+    display: flex;
+  }
+
+  &__text-title {
+    font-weight: 900;
+    margin: 0 15px 0 0;
+    line-height: 30px;
+  }
+
+  &__text-num {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.14);
+  }
+
+  &__icn {
+    display: block;
+    transform: rotate(0);
+    transition: transform .2s;
+
+    &_close {
+      transform: rotate(-180deg);
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.form-connect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 452px;
+  height: 530px;
+  background: #fff;
+  padding: 30px;
+  transform: scale(.9);
+  opacity: 0;
+  z-index: 1;
+  transition: transform .4s, opacity .4s;
+
+  &.zoomIn {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &__title-text {
+    font-size: 30px;
+    color: $color-title-popuper;
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    display: block;
+    font-size: 0.875rem;
+    color: $color-feedback-footer;
+    padding-top: 12px;
+    transition: .3s;
+    z-index: 0;
+
+    &.active {
+      display: inline;
+      height: auto;
+      bottom: 100%;
+      font-size: 10px;
+      transform: translateY(-10px);
+      transition: transform .3s;
+      padding: 0;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 41px;
+
+    &.error {
+      border-color: $color-error;
+    }
+  }
+
+  &__input, &__textarea {
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid $color-feedback-footer;
+    background: transparent;
+    font-size: 1rem;
+    z-index: 1;
+
+    &:focus, &:active {
+      outline: none;
+      border-bottom: 1px solid $color-field-active;
+
+      & + label {
+        display: inline;
+        height: auto;
+        bottom: 100%;
+        font-size: 10px;
+        transform: translateY(-10px);
+        transition: transform .3s;
+        padding: 0;
+      }
+    }
+  }
+
+  &_active + label {
+    display: inline;
+    height: auto;
+    bottom: 100%;
+    font-size: 10px;
+    transform: translateY(-10px);
+    transition: transform .3s;
+    padding: 0;
+  }
+
+  &__textarea {
+    width: 100%;
+    resize: none;
+    padding: 12px 0;
+    margin: 0 0 24px 0;
+  }
+
+  & .btn {
+    margin: 0 auto;
+  }
+
+  &__input-file {
+    position: absolute;
+    left: -9999px;
+  }
+
+  &__attach-file {
+    display: flex;
+    position: relative;
+    margin: 0 0 30px;
+  }
+
+  &__close {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: url(../img/icn-close-pop-up.png) no-repeat center;
+  }
+
+  &__close-icn {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    & image {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

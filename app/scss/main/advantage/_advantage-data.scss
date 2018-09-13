@@ -1,0 +1,19 @@
+/*advantage data*/
+.advantage-data {
+  width: 282px;
+  text-align: center;
+
+  &__num {
+    font-size: 60px;
+
+    @media screen and (max-width: 1680px) {
+      font-size: 48px;
+    }
+  }
+
+  &__descr {
+    font-weight: 500;
+    line-height: 21px;
+    padding: 5px 20px 0;
+  }
+}

@@ -1,0 +1,18 @@
+.main-charact {
+  position: relative;
+  background: $color-bg-main;
+  background: url(../img/bg-main-charact.png) no-repeat center;
+  background-size: contain;
+
+  &__substrate {
+    display: block;
+    background: $color-bg-main;
+    background: radial-gradient(ellipse closest-corner at center center, rgba(8,141,193,1), rgba(9,125,174,1));
+  }
+
+  & .wrap-inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0 80px;
+  }
+}

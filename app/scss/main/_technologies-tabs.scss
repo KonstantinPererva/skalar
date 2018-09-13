@@ -1,0 +1,54 @@
+/* technologies-tabs */
+
+.technologies-nav {
+  margin-bottom: 25px;
+  span {
+    display: inline-block;
+    padding: 8px 15px;
+    color: $white;
+    border: 1px solid rgba(255,255,255,.35);
+    cursor: pointer;
+
+    &:nth-child(1){
+      border-right-color: transparent;
+    }
+    &:nth-child(2){
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+    &:nth-child(3){
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+    &:nth-child(4){
+      border-left-color: transparent;
+    }
+    &:hover {
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.sliding-bd {
+  border: 1px solid $white;
+}
+
+.technologies-nav .slick-slide {
+  width: auto !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

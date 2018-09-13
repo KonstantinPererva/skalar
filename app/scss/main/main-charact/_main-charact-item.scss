@@ -1,0 +1,18 @@
+.main-charact-item {
+
+  &__num {
+    display: block;
+    font-size: 122px;
+    color: $color-num-big;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: -7px;
+  }
+
+  &__descr {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    line-height: 24px;
+  }
+}

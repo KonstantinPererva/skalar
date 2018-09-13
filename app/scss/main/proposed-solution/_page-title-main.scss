@@ -1,0 +1,24 @@
+.page-title-main {
+  font-size: 2.25rem;
+  text-transform: none;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+
+  &_white {
+    background: rgba(0,0,0,.09);
+    color: #fff;
+    padding: 17px 10px 16px;
+  }
+
+  &_blue {
+    color: $color-title-project;
+    padding: 24px 10px 23px;
+  }
+
+  &_line {
+    border-bottom: 2px solid #e7edef;
+    box-shadow: 0 1px 0 1px #d7e1e6 ;
+    padding: 17px 10px 16px;
+  }
+}

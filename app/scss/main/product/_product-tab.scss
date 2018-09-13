@@ -1,0 +1,18 @@
+/*product tab*/
+.product-tab {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(36px);
+  transition: transform .26s ease, opacity .26s cubic-bezier(.71,.01,.36,.99);
+
+  &_active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform .4s .26s ease, opacity .26s .3s cubic-bezier(.71,.01,.36,.99);
+    z-index: 1;
+  }
+}

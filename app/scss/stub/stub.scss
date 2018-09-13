@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+
+  @media (min-width: 1366px) {
+    overflow-y: hidden;
+  }
+}
+
+.stub {
+
+  &-wrap {
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+
+    @media (max-width: 767px) {
+      overflow: auto;
+      height: calc(100vh + 50px);
+    }
+  }
+
+  &__top-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 110px;
+
+    background: #171717;
+
+
+    @media (max-width: 767px) {
+      height: 55px;
+    }
+  }
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 230px 0 0;
+    height: calc(100vh - 110px);
+
+    @media (max-width: 767px) {
+      padding: 0;
+      height: 100vh;
+    }
+
+  }
+
+  &-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    transform: translateY(-30px);
+    opacity: 0;
+
+    animation: slideText .25s linear 4.75s;
+    animation-fill-mode: forwards;
+
+    &__title {
+      margin: 0;
+
+      color: rgba(255,255,255, .4);
+      font-size: 1rem;
+      font-weight: 600;
+
+      letter-spacing: 21px;
+      text-transform: uppercase;
+
+      @media (max-width: 767px) {
+        font-size: .9rem;
+        letter-spacing: 4px;
+      }
+
+      @media (min-width: 1600px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &-slideshow {
+    display: flex;
+    margin-top: -150px;
+    height: 100%;
+
+    background: #000;
+
+    @media (max-width: 767px) {
+      margin: -180px 0 0;
+    }
+  }
+
+  &__bottom-line {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #171717;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      height: 200px;
+      padding: 0 45px 0 60px;
+      //transform: translateY(400px);
+      //animation: slideBoxMobile .25s cubic-bezier(.6,.23,0,1.02) 4.5s;
+      //animation-fill-mode: forwards;
+    }
+  }
+
+  &-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 60px;
+    padding: 0 130px;
+    
+    font-style: normal;
+
+    @media (max-width: 767px) {
+      padding: 10px;
+      align-items: flex-start;
+      min-height: 0;
+      width: 100%;
+    }
+
+    @media (min-width: 1600px) {
+      padding: 0 145px;
+    }
+    
+    &__item {
+      color: rgba(255,255,255, .4);
+      font-size: .95rem;
+      font-weight: 300;
+
+      line-height: 24px;
+      text-decoration: none;
+
+      @media (min-width: 1600px) {
+        line-height: 28px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &-btn-wrap {
+    position: absolute;
+    bottom: 230px;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      bottom: 150px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: 1600px) {
+      bottom: 250px;
+    }
+  }
+
+  &-btn {
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      min-width: 220px;
+      padding: 20px 0;
+    }
+
+    &_center {
+      text-align: center;
+    }
+
+    &__link {
+      position: relative;
+      z-index: 1;
+
+      display: inline-block;
+      margin: 0 130px;
+
+      text-decoration: none;
+      border-left: 3px solid #fff;
+
+      overflow: hidden;
+
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 0;
+      }
+
+      @media (min-width: 1600px) {
+        margin: 0 170px;
+        //padding: 20px 30px;
+      }
+
+      &:hover {
+
+        &:before {
+          left: 0;
+        }
+
+        .stub-btn__text {
+          color: #000;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+
+        width: 100%;
+        height: 100%;
+
+        background: #fff;
+        transition: .25s;
+      }
+
+      &_n {
+        margin: 0;
+        width: 245px;
+        height: 53px;
+      }
+    }
+
+    &__text {
+      position: relative;
+      z-index: 2;
+
+      display: inline-block;
+      padding: 15px 20px;
+
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+
+
+      background: transparent;
+      border: none;
+      outline: none;
+
+      cursor: pointer;
+
+      @media (min-width: 1600px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.slide-text-top {
+  opacity: 0;
+  transform: translateY(30px);
+
+  animation: slideTextTop .25s linear 4.75s;
+  animation-fill-mode: forwards;
+}
+
+.slide-text-right {
+  transform: translateX(-30px);
+  opacity: 0;
+  animation: slideTextRight .25s linear 4.25s;
+  animation-fill-mode: forwards;
+}
+
+.slide-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  transform: translateY(110px);
+
+  animation: slideBox .25s cubic-bezier(.6,.23,0,1.02) 4.5s;
+  animation-fill-mode: forwards;
+
+  @media (max-width: 767px) {
+    position: static;
+    transform: translateY(120px);
+    //transform: translateY(0px);
+  }
+}
+
+.slide-btn {
+  transform: translateY(-63px);
+  animation: slideBtn .25s linear 4s;
+  animation-fill-mode: forwards;
+
+  @media (max-width: 767px) {
+    transform: translateY(-70px);
+  }
+}
+
+@keyframes slideBoxMobile {
+  to {
+    transform: translateY(120px);
+  }
+}
+
+@keyframes slideBox {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideTextRight {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextTop {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBtn {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.soc-net {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 0 0;
+
+  @media (max-width: 767px) {
+    width: 95%;
+    padding: 30px 0;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+
+    text-decoration: none;
+  }
+
+  &__icn {
+    //width: 100%;
+    //height: 100%;
+
+    fill: rgba(255, 255, 255, 0.4);
+  }
+}

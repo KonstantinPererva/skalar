@@ -1,0 +1,23 @@
+/*Dropdown menu*/
+.dropdown-menu {
+  
+  &__sel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 816px;
+    height: 290px;
+  }
+  
+  &__item {
+    width: 384px;
+    margin-right: 24px;
+  }
+  
+  &__icn {
+    display: block;
+    width: 24px;
+    background: url("../img/sprite-dropbox.png") no-repeat;
+    margin-right: 12px;
+  }
+}
