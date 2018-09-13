@@ -1,0 +1,37 @@
+.slider-projects {
+  width: 94.5%;
+  padding: 45px 0;
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      width: 536px;
+    }
+  }
+}
+
+.swiper-scrollbar-wrapper {
+  position: relative;
+  width: 51.715%;
+  margin: 0 auto;
+  padding: 70px 0 126px;
+}
+
+.swiper-scrollbar {
+  width: 100%;
+  top: 70px;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 50;
+  height: 5px;
+  background: rgba(255,255,255,.13);
+}
+
+.swiper-scrollbar-drag {
+  background: #fff;
+}

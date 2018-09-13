@@ -10,7 +10,9 @@
   <meta name="description" content="Компания 'SKALAR' - Полный комплекс работ по разработке и сопровождению WEB проектов, автоматизации бизнес процессов, а также услуг по внедрению корпоративных порталов, СRM и информационных систем." />
 
   <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/stub.css">
+  <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
 
@@ -23,32 +25,249 @@
     </div>
     -->
 
-    <div class="stub-slideshow" id="animation"></div>
+    <div class="stub-wrap__hold">
 
-    <div class="stub-btn-wrap">
-      <div class="stub-btn">
-        <a href="/app/SKALAR_B24.pdf.pdf" target="_blank" class="stub-btn__link slide-btn">
-          <span class="stub-btn__text slide-text-right">Интеграция Битрикс24</span>
-        </a>
+      <div class="stub-slideshow" id="animation"></div>
+
+      <div class="stub-btn-wrap">
+        <div class="stub-btn">
+          <a href="/app/SKALAR_B24.pdf.pdf" target="_blank" class="stub-btn__link slide-btn">
+            <span class="stub-btn__text slide-text-right">Интеграция Битрикс24</span>
+          </a>
+        </div>
+
+        <div class="stub-btn">
+          <a href="#" class="stub-btn__link slide-btn">
+
+            <script id="bx24_form_button" data-skip-moving="true">
+              (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+                (w[b].forms=w[b].forms||[]).push(arguments[0])};
+                if(w[b]['forms']) return;
+                var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+              })(window,document,'https://24.skalar.net/bitrix/js/crm/form_loader.js','b24form');
+
+              b24form({"id":"11","lang":"ru","sec":"n0wq51","type":"button","click":""});
+            </script><button class="stub-btn__text slide-text-right b24-web-form-popup-btn-11">Связаться с нами</button>
+
+            <!--<span class="stub-btn__text">Связаться с нами</span>-->
+          </a>
+        </div>
       </div>
 
-      <div class="stub-btn">
-        <a href="#" class="stub-btn__link slide-btn">
+    </div>
 
-          <script id="bx24_form_button" data-skip-moving="true">
-            (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
-              (w[b].forms=w[b].forms||[]).push(arguments[0])};
-              if(w[b]['forms']) return;
-              var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
-              var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-            })(window,document,'https://24.skalar.net/bitrix/js/crm/form_loader.js','b24form');
+    <div class="swiper-container slider-projects">
+      <ul class="swiper-wrapper slider-projects-list">
+        <li class="swiper-slide slider-projects-list__item">
+          <div class="project">
+            <a href="#" class="project-video">
+              <video src="video/Komp1.mp4" class="project-video__video" muted loop autoplay></video>
 
-            b24form({"id":"11","lang":"ru","sec":"n0wq51","type":"button","click":""});
-          </script><button class="stub-btn__text slide-text-right b24-web-form-popup-btn-11">Мы перезвоним вам</button>
+              <span class="project-video__ico">
+                <svg width="22px" height="22px" viewBox="0 0 22 22" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-940.000000, -467.000000)">
+                        <g id="Body" transform="translate(88.000000, 100.000000)" fill="#ffffff" fill-rule="nonzero">
+                            <g id="work-1-copy-3" transform="translate(2.000000, 170.000000)">
+                                <g id="text" transform="translate(706.000000, 80.000000)">
+                                    <path d="M156.99956,117 L166.002562,117 L166.002562,126.002247 L164.002562,126.002247 L164.002562,120.413021 L155.94305,128.472532 L154.530029,127.059512 L162.589541,119 L156.99956,119 L156.99956,117 Z M164,132 L166,132 L166,139 L144,139 L144,117 L151,117 L151,119 L146,119 L146,137 L164,137 L164,132 Z" id="link"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </span>
 
-          <!--<span class="stub-btn__text">Связаться с нами</span>-->
-        </a>
-      </div>
+              <span class="project-video__substrate"></span>
+            </a>
+
+            <div class="project-video__title">
+              <div class="project-video-text">
+                  <span class="project-video-text__name">
+                    spazio
+                  </span>
+                <span class="project-video-text__descr">
+                    интернет-магазин
+                  </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide slider-projects-list__item">
+          <div class="project">
+            <a href="#" class="project-video">
+              <video src="video/Komp2.mp4" class="project-video__video" muted loop autoplay></video>
+
+              <span class="project-video__ico">
+                <svg width="22px" height="22px" viewBox="0 0 22 22" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-940.000000, -467.000000)">
+                        <g id="Body" transform="translate(88.000000, 100.000000)" fill="#ffffff" fill-rule="nonzero">
+                            <g id="work-1-copy-3" transform="translate(2.000000, 170.000000)">
+                                <g id="text" transform="translate(706.000000, 80.000000)">
+                                    <path d="M156.99956,117 L166.002562,117 L166.002562,126.002247 L164.002562,126.002247 L164.002562,120.413021 L155.94305,128.472532 L154.530029,127.059512 L162.589541,119 L156.99956,119 L156.99956,117 Z M164,132 L166,132 L166,139 L144,139 L144,117 L151,117 L151,119 L146,119 L146,137 L164,137 L164,132 Z" id="link"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </span>
+
+              <span class="project-video__substrate"></span>
+            </a>
+
+            <div class="project-video__title">
+              <div class="project-video-text">
+                  <span class="project-video-text__name">
+                    the icon
+                  </span>
+                <span class="project-video-text__descr">
+                    интернет-магазин
+                  </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide slider-projects-list__item">
+          <div class="project">
+            <a href="#" class="project-video">
+              <video src="video/micromodel.mp4" class="project-video__video" muted loop autoplay></video>
+
+              <span class="project-video__ico">
+                <svg width="22px" height="22px" viewBox="0 0 22 22" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-940.000000, -467.000000)">
+                        <g id="Body" transform="translate(88.000000, 100.000000)" fill="#ffffff" fill-rule="nonzero">
+                            <g id="work-1-copy-3" transform="translate(2.000000, 170.000000)">
+                                <g id="text" transform="translate(706.000000, 80.000000)">
+                                    <path d="M156.99956,117 L166.002562,117 L166.002562,126.002247 L164.002562,126.002247 L164.002562,120.413021 L155.94305,128.472532 L154.530029,127.059512 L162.589541,119 L156.99956,119 L156.99956,117 Z M164,132 L166,132 L166,139 L144,139 L144,117 L151,117 L151,119 L146,119 L146,137 L164,137 L164,132 Z" id="link"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </span>
+
+              <span class="project-video__substrate"></span>
+            </a>
+
+            <div class="project-video__title">
+              <div class="project-video-text">
+                  <span class="project-video-text__name">
+                    микромодели
+                  </span>
+                <span class="project-video-text__descr">
+                    интернет-магазин
+                  </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide slider-projects-list__item">
+          <div class="project">
+            <a href="#" class="project-video">
+              <video src="video/udecasi.mp4" class="project-video__video" muted loop autoplay></video>
+
+              <span class="project-video__ico">
+                <svg width="22px" height="22px" viewBox="0 0 22 22" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-940.000000, -467.000000)">
+                        <g id="Body" transform="translate(88.000000, 100.000000)" fill="#ffffff" fill-rule="nonzero">
+                            <g id="work-1-copy-3" transform="translate(2.000000, 170.000000)">
+                                <g id="text" transform="translate(706.000000, 80.000000)">
+                                    <path d="M156.99956,117 L166.002562,117 L166.002562,126.002247 L164.002562,126.002247 L164.002562,120.413021 L155.94305,128.472532 L154.530029,127.059512 L162.589541,119 L156.99956,119 L156.99956,117 Z M164,132 L166,132 L166,139 L144,139 L144,117 L151,117 L151,119 L146,119 L146,137 L164,137 L164,132 Z" id="link"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </span>
+
+              <span class="project-video__substrate"></span>
+            </a>
+
+            <div class="project-video__title">
+              <div class="project-video-text">
+                  <span class="project-video-text__name">
+                    udekasi
+                  </span>
+                <span class="project-video-text__descr">
+                    интернет-магазин
+                  </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide slider-projects-list__item">
+          <div class="project">
+            <a href="#" class="project-video">
+              <video src="video/TacTeck5.11.mp4" class="project-video__video" muted loop autoplay></video>
+
+              <span class="project-video__ico">
+                <svg width="22px" height="22px" viewBox="0 0 22 22" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-940.000000, -467.000000)">
+                        <g id="Body" transform="translate(88.000000, 100.000000)" fill="#ffffff" fill-rule="nonzero">
+                            <g id="work-1-copy-3" transform="translate(2.000000, 170.000000)">
+                                <g id="text" transform="translate(706.000000, 80.000000)">
+                                    <path d="M156.99956,117 L166.002562,117 L166.002562,126.002247 L164.002562,126.002247 L164.002562,120.413021 L155.94305,128.472532 L154.530029,127.059512 L162.589541,119 L156.99956,119 L156.99956,117 Z M164,132 L166,132 L166,139 L144,139 L144,117 L151,117 L151,119 L146,119 L146,137 L164,137 L164,132 Z" id="link"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </span>
+
+              <span class="project-video__substrate"></span>
+            </a>
+
+            <div class="project-video__title">
+              <div class="project-video-text">
+                  <span class="project-video-text__name">
+                    tacteck
+                  </span>
+                <span class="project-video-text__descr">
+                    интернет-магазин
+                  </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide slider-projects-list__item">
+          <div class="project">
+            <div href="#" class="project-video">
+              <video src="video/mandr.mp4" class="project-video__video" muted loop autoplay></video>
+
+              <span class="project-video__ico">
+                <svg width="22px" height="22px" viewBox="0 0 22 22" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-940.000000, -467.000000)">
+                        <g id="Body" transform="translate(88.000000, 100.000000)" fill="#ffffff" fill-rule="nonzero">
+                            <g id="work-1-copy-3" transform="translate(2.000000, 170.000000)">
+                        <g id="text" transform="translate(706.000000, 80.000000)">
+                                    <path d="M156.99956,117 L166.002562,117 L166.002562,126.002247 L164.002562,126.002247 L164.002562,120.413021 L155.94305,128.472532 L154.530029,127.059512 L162.589541,119 L156.99956,119 L156.99956,117 Z M164,132 L166,132 L166,139 L144,139 L144,117 L151,117 L151,119 L146,119 L146,137 L164,137 L164,132 Z" id="link"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </span>
+
+              <span class="project-video__substrate"></span>
+            </div>
+
+            <div class="project-video__title">
+              <div class="project-video-text">
+                  <span class="project-video-text__name">
+                    мандрiвник
+                  </span>
+                <span class="project-video-text__descr">
+                    интернет-магазин
+                  </span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="swiper-scrollbar-wrapper">
+      <div class="swiper-scrollbar"></div>
     </div>
 
     <div class="stub__bottom-line slide-box">
@@ -89,6 +308,7 @@
 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="libs/lottie/lottie.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/stub.js"></script>
   <script data-skip-moving="true">
     (function(w,d,u){
