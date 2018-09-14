@@ -3,6 +3,19 @@
   text-decoration: none;
   outline: none;
 
+  &:hover {
+    cursor: url(../img/cursor-hand.png),auto;
+    outline: none;
+
+    & .project-video__ico {
+      opacity: 1;
+    }
+
+    & .project-video__substrate {
+      background: rgba(255,255,255,.17);
+    }
+  }
+
   &:active {
     outline: none;
   }
@@ -60,18 +73,20 @@
       transition: .15s;
       z-index: 1;
     }
-
-    &:hover {
-      cursor: url(../img/cursor-hand.png),auto;
-      outline: none;
-
-      & .project-video__ico {
-        opacity: 1;
-      }
-
-      & .project-video__substrate {
-        background: rgba(255,255,255,.17);
-      }
-    }
   }
+}
+
+.page-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-scrollbar {
+  width: 5px;
+  height: 98%;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: rgba(255,255,255,.13);
+  z-index: 55;
 }

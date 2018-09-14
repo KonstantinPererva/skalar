@@ -122,6 +122,7 @@ body {
   }
 
   &__bottom-line {
+    flex-shrink: 0;
     height: 110px;
     display: flex;
     align-items: center;

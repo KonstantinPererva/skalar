@@ -1,10 +1,15 @@
 .slider-projects {
-  width: 94.5%;
-  padding: 45px 0;
+  //width: 94.5%;
+  max-width: 2100px;
 
   @media (max-width: 767px) {
     width: 100%;
     padding: 45px 10px;
+  }
+
+  &-wrapper {
+    flex-grow: 1;
+    padding: 140px 55px 45px;
   }
 
   &-list {
@@ -26,6 +31,57 @@
   }
 }
 
+.slider-scroll-icon {
+  display: none;
+
+  @media (max-width: 1280px) {
+    display: block;
+    text-align: right;
+    padding: 10px 0 20px;
+  }
+
+  &__ico {
+    animation: icon-anim 1.5s infinite;
+  }
+}
+
+@keyframes icon-anim {
+  0% {
+    transform: translate3d(-20px,0,0);
+    opacity: 0;
+  }
+
+  10% {
+    transform: translate3d(-20px,0,0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translate3d(-20px,0,0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+
+  81% {
+    transform: translate3d(0,0,0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0,0,0);
+    opacity: 0;
+  }
+}
+
 .swiper-scrollbar-wrapper {
   position: relative;
   width: 51.715%;
@@ -39,7 +95,7 @@
 
 .swiper-scrollbar {
   width: 100%;
-  top: 70px;
+  top: 130px;
   left: 0;
   bottom: 0;
   margin: 0 auto;
