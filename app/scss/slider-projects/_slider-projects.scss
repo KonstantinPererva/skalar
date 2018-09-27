@@ -8,8 +8,19 @@
   }
 
   &-wrapper {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    padding: 140px 55px 45px;
+    padding: 0 55px;
+
+    @media (max-width: 767px) {
+      padding: 0 20px;
+    }
+
+    &__inner {
+      width: 100%;
+      margin: auto;
+    }
   }
 
   &-list {
@@ -18,7 +29,10 @@
     padding: 0;
 
     &__item {
-      width: 536px;
+
+      @media (max-width: 800px) and (max-height: 600px) {
+        width: 290px;
+      }
 
       @media (max-width: 767px) {
         width: 290px;
@@ -37,43 +51,33 @@
   @media (max-width: 1280px) {
     display: block;
     text-align: right;
-    padding: 10px 0 20px;
+    padding: 12px 20px 12px 0;
   }
 
   &__ico {
     animation: icon-anim 1.5s infinite;
+
+    @media (max-width: 767px) {
+      width: 22px;
+      height: 22px;
+    }
   }
 }
 
 @keyframes icon-anim {
   0% {
-    transform: translate3d(-20px,0,0);
-    opacity: 0;
-  }
-
-  10% {
-    transform: translate3d(-20px,0,0);
+    transform: translate3d(20px,0,0);
     opacity: 0;
   }
 
   20% {
-    transform: translate3d(-20px,0,0);
-    opacity: 1;
-  }
-
-  70% {
-    transform: translate3d(0,0,0);
+    transform: translate3d(20px,0,0);
     opacity: 1;
   }
 
   80% {
     transform: translate3d(0,0,0);
     opacity: 1;
-  }
-
-  81% {
-    transform: translate3d(0,0,0);
-    opacity: 0;
   }
 
   100% {
@@ -86,7 +90,43 @@
   position: relative;
   width: 51.715%;
   margin: 0 auto;
-  padding: 70px 0 126px;
+  padding: 60px 0 0;
+
+  @media (min-width: 1024px) and (max-height: 768px) {
+    padding: 40px 0 0;
+  }
+
+  @media (min-width: 1024px) and (min-height: 768px) {
+    padding: 40px 0 0;
+  }
+
+  @media (min-width: 1280px) and (max-height: 767px) {
+    padding: 40px 0 0;
+  }
+
+  @media (min-width: 1280px) and (min-height: 768px) {
+    padding: 80px 0 0;
+  }
+
+  @media (min-width: 1280px) and (min-height: 960px) {
+    padding: 100px 0 0;
+  }
+
+  @media (min-width: 1340px) and (max-height: 767px) {
+    padding: 40px 0 0;
+  }
+
+  @media (min-width: 1400px) and (max-height: 767px) {
+    padding: 60px 0 0;
+  }
+
+  @media (min-width: 1400px) and (min-height: 768px) {
+    padding: 80px 0 0;
+  }
+
+  @media (min-width: 1400px) and (min-height: 900px) {
+    padding: 110px 0 0;
+  }
 
   @media (max-width: 767px) {
     padding: 20px 0 60px;
@@ -95,7 +135,7 @@
 
 .swiper-scrollbar {
   width: 100%;
-  top: 130px;
+  top: 100%;
   left: 0;
   bottom: 0;
   margin: 0 auto;
@@ -111,4 +151,59 @@
 
 .swiper-scrollbar-drag {
   background: #fff;
+}
+
+.arrow-next-slide {
+  position: absolute;
+  width: 100%;
+  bottom: 60px;
+  opacity: 0;
+  animation: opac 1.5s 3s forwards;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  &__ico-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    padding: 10px 0 0;
+    animation: move 1.5s linear infinite;
+  }
+
+  &__ico {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@keyframes opac {
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }

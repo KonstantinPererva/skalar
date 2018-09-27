@@ -10,28 +10,27 @@ body, html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  overflow-x: hidden;
-  //
-  //@media (min-width: 1366px) {
-  //  overflow-y: hidden;
-  //}
+
+  @media (min-width: 768px) {
+    height:  100vh;
+    overflow: hidden;
+  }
 }
 
 .stub {
 
   &-wrap {
     background: #000;
-    min-height: 100vh;
-    //height: 100vh;
-    overflow: hidden;
 
-    @media (max-width: 767px) {
-      //overflow: auto;
-      //height: calc(100vh + 50px);
+    @media (min-width: 768px) {
+      height: 100vh;
+      overflow: hidden;
     }
 
     &__hold {
       height: 100vh;
+      margin: auto;
+      width: 100%;
 
       @media (max-width: 767px) {
         height: auto;
@@ -123,14 +122,13 @@ body {
 
   &__bottom-line {
     flex-shrink: 0;
-    height: 110px;
+    //height: 70px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-
     overflow: hidden;
-
     background: #171717;
+    padding: 10px 0;
 
     @media (max-width: 767px) {
       flex-direction: column;
@@ -150,47 +148,65 @@ body {
 
   &-address {
     display: block;
-    min-height: 84px;
+    width: 100%;
     font-style: normal;
     white-space: nowrap;
+    padding: 10px;
 
     @media (min-width: 768px) {
+      padding: 0 3%;
+      min-height: 60px;
+    }
+
+    @media (min-width: 800px) {
+      padding: 0 5%;
+    }
+
+    @media (min-width: 1024px) {
       padding: 0 6%;
     }
-
-    @media (max-width: 767px) {
-      padding: 10px;
-      align-items: flex-start;
-      min-height: 0;
-      width: 100%;
-    }
-    //
-    //@media (min-width: 1600px) {
-    //  padding: 0 145px;
-    //}
     
     &__item {
-      display: block;
       color: rgba(255,255,255, .4);
-      font-size: .95rem;
       font-weight: 300;
-      line-height: 24px;
       text-decoration: none;
+      line-height: 28px;
+      font-size: 16px;
 
-      @media (min-width: 1600px) {
-        line-height: 28px;
-        font-size: 1.1rem;
+      &_local {
+        display: inline-block;
+        vertical-align: middle;
+
+        @media (max-width: 1024px) {
+          display: block;
+        }
       }
 
       &_map {
-        display: inline;
-        font-size: 14px;
+        display: inline-block;
+        font-size: 16px;
         color: #fff;
         border-bottom: 1px solid #fff;
 
         &:hover {
           border-bottom: 1px solid transparent;
         }
+      }
+    }
+
+    &_tel {
+      text-align: center;
+
+      @media (max-width: 767px) {
+        text-align: left;
+      }
+    }
+
+    &_mail {
+      text-align: right;
+
+      @media (max-width: 767px) {
+        text-align: left;
       }
     }
   }
@@ -208,6 +224,11 @@ body {
       bottom: 150px;
       flex-direction: column;
       align-items: center;
+      padding: 80px 0 0;
+    }
+
+    @media (max-width: 320px) {
+      padding: 40px 0 0;
     }
     //
     //@media (min-width: 1600px) {
@@ -219,7 +240,7 @@ body {
     overflow: hidden;
 
     @media (max-width: 767px) {
-      min-width: 220px;
+      min-width: 246px;
       padding: 20px 0;
     }
 
@@ -258,11 +279,17 @@ body {
       &:hover {
 
         &:before {
-          left: 0;
+
+          @media (min-width: 768px) {
+            left: 0;
+          }
         }
 
         .stub-btn__text {
-          color: #000;
+
+          @media (min-width: 768px) {
+            color: #000;
+          }
         }
       }
 
@@ -320,10 +347,17 @@ body {
 }
 
 .slide-text-right {
-  transform: translateX(-30px);
-  opacity: 0;
-  animation: slideTextRight .25s linear 4.25s;
-  animation-fill-mode: forwards;
+
+  @media (min-width: 768px) {
+    transform: translateX(-30px);
+    opacity: 0;
+    animation: slideTextRight .25s linear 4.25s;
+    animation-fill-mode: forwards;
+  }
+  
+  &_file {
+    color: #7f7f7f;
+  }
 }
 
 .slide-box {
@@ -344,12 +378,11 @@ body {
 }
 
 .slide-btn {
-  transform: translateY(-63px);
-  animation: slideBtn .25s linear 4s;
-  animation-fill-mode: forwards;
 
-  @media (max-width: 767px) {
-    transform: translateY(-70px);
+  @media (min-width: 768px) {
+    transform: translateY(-63px);
+    animation: slideBtn .25s linear 4s;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -387,12 +420,16 @@ body {
 
 .soc-net {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 26px 0 0;
+  justify-content: flex-end;
+  //width: 152px;
+  padding: 7px 0 0;
+
+  @media (max-width: 1024px) {
+    padding: 20px 0 0;
+  }
 
   @media (max-width: 767px) {
-    width: 142px;
+    width: 152px;
     padding: 30px 0;
   }
 
@@ -403,6 +440,7 @@ body {
     width: 18px;
     height: 18px;
     text-decoration: none;
+    margin: 0 0 0 46px;
 
     &:hover {
 
